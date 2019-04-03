@@ -1,6 +1,6 @@
 <template>
   <div class="training">
-    <hi>Math training. Level {{ level + 1 }}</hi>
+    <h1>Math training. Level {{ level + 1 }}</h1>
     <hr />
     <div class="progress">
       <div class="progress-bar" :style="progressStyles"></div>
@@ -133,31 +133,31 @@ export default {
 }
 
 .flip-enter-active {
-  animation: flipInY 0.5s linear;
+  animation: flipInX 0.5s linear;
 }
 
 .flip-leave {
 }
 
 .flip-leave-active {
-  animation: flipOutY 0.5s linear;
+  animation: flipOutX 0.5s linear;
 }
 
-@keyframes flipInY {
+@keyframes flipInX {
   from {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
   }
   to {
     transform: rotate(0deg);
   }
 }
 
-@keyframes flipOutY {
+@keyframes flipOutX {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
   }
 }
 </style>
